@@ -27,12 +27,12 @@ const Header: React.FC = () => {
               </Styled.Link>
             </Styled.Menu>
             <Styled.Menu>
-              <Styled.Link href="/">
+              <Styled.Link href={ROUTES.HOME}>
                 <Styled.MenuButton>영화</Styled.MenuButton>
               </Styled.Link>
             </Styled.Menu>
             <Styled.Menu>
-              <Styled.Link href="/TV">
+              <Styled.Link href={ROUTES.TV}>
                 <Styled.MenuButton>TV 프로그램</Styled.MenuButton>
               </Styled.Link>
             </Styled.Menu>
