@@ -18,10 +18,12 @@ const TvPage: React.FC = () => {
     <>
       <Header />
       <Layout>
-        <AiringTodaySection />
-        <OnTheAirSection />
-        <PopularSection />
-        <TopRateSection />
+        <ListPage>
+          <AiringTodaySection />
+          <OnTheAirSection />
+          <PopularSection />
+          <TopRateSection />
+        </ListPage>
       </Layout>
       <Footer />
     </>
