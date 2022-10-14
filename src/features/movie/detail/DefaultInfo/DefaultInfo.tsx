@@ -1,5 +1,4 @@
 import React from "react";
-import { Title } from "../detailPage.styled";
 import * as Styled from "./defaultInfo.styled";
 
 interface Props {
@@ -22,10 +21,7 @@ const DefaultInfo: React.FC<Props> = ({
     <Styled.Base>
       <Styled.HeaderWrapper>
         <Styled.Header>
-          <Title></Title>
-          <Styled.StyleLink to="/overview">
-            <Styled.MoreSee>더보기</Styled.MoreSee>
-          </Styled.StyleLink>
+          <Styled.Title>기본 정보</Styled.Title>
         </Styled.Header>
         <Styled.Summary>
           {title}
