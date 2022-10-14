@@ -1,6 +1,6 @@
 import React from "react";
 import * as Styled from "./Card.styled";
-import { AiFillStar } from "react-icons/ai";
+import { AiFillStar, AiOutlineFileImage } from "react-icons/ai";
 
 interface Props {
   linkUrl: string;
@@ -21,10 +21,16 @@ const Card: React.FC<Props> = ({
     <Styled.StyledLink to={linkUrl}>
       <Styled.Base>
         <Styled.ImageWrapper>
-          <Styled.Image
-            src={`${process.env.REACT_APP_IMAGE_URL}${posterPath}`}
-            alt={`${title}의 포스터`}
-          />
+          {!posterPath ? (
+            <Styled.NonImage>
+              <AiOutlineFileImage />
+            </Styled.NonImage>
+          ) : (
+            <Styled.Image
+              src={`${process.env.REACT_APP_IMAGE_URL}${posterPath}`}
+              alt={`${title}의 포스터`}
+            />
+          )}
         </Styled.ImageWrapper>
         <Styled.Info>
           <Styled.Title>{title}</Styled.Title>

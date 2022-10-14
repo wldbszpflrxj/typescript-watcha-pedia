@@ -14,13 +14,24 @@ const Base = styled.div`
 `;
 const ImageWrapper = styled.div`
   width: 100%;
-  height: 300px;
+  height: 330px;
+  overflow: hidden;
 `;
 const Image = styled.img`
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
   object-fit: cover;
   border-radius: 4px;
+`;
+const NonImage = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  color: #666;
+  font-size: 30px;
+  justify-content: center;
+  border: 1px solid #ededed;
 `;
 const Info = styled.div`
   text-align: left;
@@ -68,4 +79,5 @@ export {
   StyledLink,
   Title,
   FlexBox,
+  NonImage,
 };
